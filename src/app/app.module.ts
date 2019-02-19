@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { WestPanelComponent } from './west-panel/west-panel.component';
 import { EastPanelComponent } from './east-panel/east-panel.component';
+import { GroupsComponent } from './groups/groups.component';
+import { AddGroupComponent } from './add-group/add-group.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { EastPanelComponent } from './east-panel/east-panel.component';
     HomeComponent,
     NavigationComponent,
     WestPanelComponent,
-    EastPanelComponent
+    EastPanelComponent,
+    GroupsComponent,
+    AddGroupComponent
   ],
   imports: [
     BrowserModule,
