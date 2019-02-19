@@ -1,14 +1,11 @@
-<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Add new group</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Group 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Group 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Group 3</a>
-    </li>
-</ul>
+<nav class="navbar navbar-dark navbar-expand">
+</nav>
+<div class="row">
+<!--list of group -->
+    <ul>
+      <li class="nav-item"  *ngFor="let groupList of listOfGroup">
+        <a class="nav-link" [routerLink]="''" routerLinkActive="active">{{groupList}}</a>
+      </li>
+      <!--<li *ngFor="let groupList of listOfGroup">{{groupList}}</li>-->
+    </ul>
+</div>
