@@ -1,10 +1,12 @@
 <nav class="navbar navbar-dark navbar-expand">
 </nav>
-<div class="row">
+<div class="container">
 <!--list of group -->
-    <ul>
-      <li class="nav-item"  *ngFor="let groupList of listOfGroup">
-        <a class="nav-link" [routerLink]="''" routerLinkActive="active">{{groupList}}</a>
+    <ul >
+      <li *ngFor="let groupList of listOfGroup">
+        <a class="nav-link" (click)="gotoGroupDetails('/groupActivity',groupList.id)" [routerLink]= "['/groupActivity/',groupList.id]" 
+        routerLinkActive="active">{{groupList.groupName}}</a>
+        <!--<button (click)="gotoGroupDetails('/groupActivity',groupList.id)">{{groupList.groupName}}</button>-->
       </li>
       <!--<li *ngFor="let groupList of listOfGroup">{{groupList}}</li>-->
     </ul>
