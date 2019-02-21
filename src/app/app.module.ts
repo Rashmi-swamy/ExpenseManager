@@ -9,6 +9,7 @@ import { WestPanelComponent } from './west-panel/west-panel.component';
 import { EastPanelComponent } from './east-panel/east-panel.component';
 import { GroupsComponent } from './groups/groups.component';
 import { AddGroupComponent } from './add-group/add-group.component';
+import { GroupActivitesComponent } from './group-activites/group-activites.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddGroupComponent } from './add-group/add-group.component';
     WestPanelComponent,
     EastPanelComponent,
     GroupsComponent,
-    AddGroupComponent
+    AddGroupComponent,
+    GroupActivitesComponent
   ],
   imports: [
     BrowserModule,
